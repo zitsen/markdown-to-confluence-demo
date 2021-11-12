@@ -1,5 +1,5 @@
 ---
-title: "Test for md2cf: page1"
+title: "Test for md2cf page1"
 ---
 # This is test for Markdown To Confluence
 
