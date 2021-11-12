@@ -24,4 +24,12 @@ title: "test for md2cf"
 echo hello confluence
 ```
 
+Test uml support:
+
+```plantuml
+@startuml
+Bob -> Alice : hello
+@enduml
+```
+
 ![image](settings.png)
