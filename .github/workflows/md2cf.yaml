@@ -30,4 +30,4 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Push to confluence
         run: |
-          md2cf -s $CONFLUENCE_SPACE --parent-id $CONFLUENCE_PARENT_ID README.md
+          md2cf -s "$CONFLUENCE_SPACE" --parent-id "$CONFLUENCE_PARENT_ID" README.md
