@@ -29,6 +29,11 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Push to confluence
+        env:
+          CONFLUENCE_HOST: ${{ secrets.CONFLUENCE_HOST }}
+          CONFLUENCE_USER: ${{ secrets.CONFLUENCE_USER }}
+          CONFLUENCE_PASSWORD: ${{ secrets.CONFLUENCE_PASSWORD }}
+          CONFLUENCE_SPACE: ${{ secrets.CONFLUENCE_SPACE }}
+          CONFLUENCE_PARENT_ID: ${{ secrets.CONFLUENCE_PARENT_ID }}
         run: |
-          echo md2cf -o "$CONFLUENCE_HOST" -s "$CONFLUENCE_SPACE" --parent-id "$CONFLUENCE_PARENT_ID" README.md
-          md2cf -o "$CONFLUENCE_HOST" -s "$CONFLUENCE_SPACE" --parent-id "$CONFLUENCE_PARENT_ID" README.md
+          md2cf -s "$CONFLUENCE_SPACE" --parent-id "$CONFLUENCE_PARENT_ID" README.md
