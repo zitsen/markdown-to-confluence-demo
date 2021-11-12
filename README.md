@@ -24,6 +24,10 @@ title: "test for md2cf"
 echo hello confluence
 ```
 
+Test plantuml remote link png:
+
+![uml](http://www.plantuml.com/plantuml/uml/SyfFKj2rKt3CoKnELR1Io4ZDoSa70000)
+
 Test uml support:
 
 ```plantuml
