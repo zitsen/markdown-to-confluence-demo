@@ -36,4 +36,4 @@ jobs:
           CONFLUENCE_SPACE: ${{ secrets.CONFLUENCE_SPACE }}
           CONFLUENCE_PARENT_ID: ${{ secrets.CONFLUENCE_PARENT_ID }}
         run: |
-          md2cf -s "$CONFLUENCE_SPACE" --parent-id "$CONFLUENCE_PARENT_ID" --force-unique ./
+          md2cf -s "$CONFLUENCE_SPACE" --parent-id "$CONFLUENCE_PARENT_ID" --use-pages-file ./
