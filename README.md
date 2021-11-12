@@ -23,3 +23,5 @@ title: "test for md2cf"
 # this is bash code
 echo hello confluence
 ```
+
+![image](settings.png)
